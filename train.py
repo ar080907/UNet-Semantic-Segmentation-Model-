@@ -4,7 +4,7 @@ import torch.optim as optim
 import tqdm
 from model import UNet
 from save import save
-from datase import train_loader, validation_loader
+from dataset import train_loader, validation_loader
 from dice import dice
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = UNet().to(device)
